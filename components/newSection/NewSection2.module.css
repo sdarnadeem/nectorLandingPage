@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat&display=swap");
+
+.container {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5rem 0;
+}
+
+.left {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.right .tip {
+  font-size: 1.3rem;
+  padding: 5px 40px;
+  background-color: #e680ff;
+  transform: translateX(-7rem) rotate(10deg);
+
+  font-family: "Caveat", cursive;
+  margin-top: 3rem;
+}
+
+.image {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  transform: rotate(10deg);
+}
+
+.right {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.right p {
+  font-size: 1.3rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (max-width: 1150px) {
+  .right .tip {
+    transform: rotate(10deg);
+  }
+
+  .image {
+    width: 400px;
+    height: 400px;
+  }
+  .right p {
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+  }
+  .right {
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+    padding: 0;
+    padding-top: 8rem;
+  }
+  .right {
+    order: 1;
+    padding-top: 5rem;
+  }
+
+  .left {
+    order: 2;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .container {
+    padding-top: 20rem;
+  }
+}

@@ -1,0 +1,141 @@
+.featuredSection {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  max-width: 100%;
+  margin: 50px 5%;
+  column-gap: 2rem;
+}
+
+.featuredSection div img {
+  clip-path: inset(0% 0% 0% 0%);
+}
+
+.featuredSection h6 {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.featuredSection .featuredRowLayout,
+.featuredSection .featuredColumnLayout {
+  /* display: grid; */
+  /* gap: 10px; */
+}
+
+.popupbg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: #c6cbcf98;
+  display: grid;
+  place-items: center;
+}
+.popup {
+  width: 50%;
+  height: 50%;
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+}
+.popup h4 {
+  font-size: 1.5em;
+  line-height: 60px;
+}
+.popup h6 {
+  font-size: 1em;
+  color: #05cab6;
+  text-align: center;
+}
+
+.featuredSection .featuredRowLayout {
+  grid-template-columns: repeat(2, auto);
+}
+.featuredSection .featuredRowLayout img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.featuredSection .featuredColumnLayout {
+  grid-template-columns: 100px auto;
+  align-items: flex-end;
+}
+.featuredSection .featuredColumnLayout .imageContainer {
+  height: 100vh;
+  width: 100%;
+}
+.featuredSection .featuredColumnLayout .imageContainer img {
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  width: 67.5%;
+  /* width: 100%; */
+}
+
+.featuredSection .featuredColumnLayout img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* .featuredSection .featured-column-layout .img-container::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(241, 243, 245);
+  content: "";
+} */
+/* .featuredSection .featuredColumnLayout .imgContainer {
+  height: 100vh !important;
+  position: relative !;
+  background-color: #05cab6;
+}
+
+.featuredSection .featuredColumnLayout .imgContainer img {
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.featuredSection .featuredColumnLayout .imgContainer::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(241, 243, 245);
+  content: "";
+} */
+
+@media screen and (max-width: 768px) {
+  .popup {
+    width: 70%;
+  }
+  .featuredSection {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .popup {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .popup h4 {
+    font-size: 1rem;
+  }
+  .popup h6 {
+    font-size: 0.9rem;
+  }
+}

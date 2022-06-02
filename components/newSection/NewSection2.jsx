@@ -20,7 +20,7 @@ const NewSection2 = () => {
         </motion.div>
       </div>
       <div className={c.right}>
-        <motion.p
+        <motion.div
           key="hdskjghsaighgskjghfsgughjsdkgh"
           initial={{ y: 20 }}
           whileInView={{ y: 0 }}
@@ -35,7 +35,7 @@ const NewSection2 = () => {
           bar or playing with their 4-legged friend. On video, you can get a
           better idea of the person’s total package. Through a video - you can
           get a more accurate representation of the person behind the profile.
-        </motion.p>
+        </motion.div>
         <motion.p
           className={c.tip}
           key="hdskjghsaigfsgughjsdkgh"

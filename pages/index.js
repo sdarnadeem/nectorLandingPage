@@ -4,25 +4,34 @@ import { useState, useEffect } from "react";
 import { Element, scroller } from "react-scroll";
 import About from "../sections/about/About";
 import AppFeatures from "../sections/AppFeatures/AppFeatures";
+import Modals from "./../sections/navbar/Modals";
+import { Button, Modal, Footer, Header } from "react-bootstrap";
 
 import Featured from "../sections/featured/Featured";
 import NewSection from "../sections/newSection/NewSection";
 
 export default function Home() {
+  const [show, setShow] = useState(false);
+  const handleShow = () => setShow(true);
+
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-
       scroller.scrollTo("myScrollToElement", {
         duration: 3000,
         delay: 100,
         smooth: true,
         containerId: "ContainerElementID",
-        // offset: 50, // Scrolls to element + 50 pixels down the page
+        offset: 50, // Scrolls to element + 50 pixels down the page
       });
-    }, 3000);
-  });
+    }, 3500);
+
+    setTimeout(() => {
+      setShow(true);
+    }, 10000);
+    setShow(false);
+  }, []);
 
   function hanldeViewChange(inView, entry) {
     console.log(inView);
@@ -39,7 +48,7 @@ export default function Home() {
           {/* <Element name={"navbar"}>
           </Element> */}
           {/* <NavBar  /> */}
-          <NewSection />
+          <NewSection setShow={setShow} />
           {/* <Element name="featured">
             <Featured />
           </Element>{" "}
@@ -49,6 +58,9 @@ export default function Home() {
           <Element name="about">
             <AppFeatures />
           </Element>
+          <div>
+            <Modals setShow={setShow} show={show} />
+          </div>
         </>
       )}
     </>

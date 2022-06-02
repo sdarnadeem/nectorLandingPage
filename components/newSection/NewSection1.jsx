@@ -5,9 +5,14 @@ import Image from "next/image";
 
 import { motion } from "framer-motion";
 
-const NewSection1 = () => {
+const NewSection1 = (props) => {
+  console.log(props.setShow);
+
+  const setMeBtn = () => {
+    props.setShow(true);
+  };
   return (
-    <div className={c.container}>
+    <div id="home" className={c.container}>
       <div className={c.leftSide}>
         <motion.h2
           key="hdskjghsaighdjkghjgjggfghgskjghfsgughjsdkgh"
@@ -23,6 +28,7 @@ const NewSection1 = () => {
             initial={{ y: 100 }}
             whileInView={{ y: 0 }}
             transition={{ duration: 1, type: "tween", delay: 0.3 }}
+            onClick={setMeBtn}
           >
             Set me up
           </motion.button>

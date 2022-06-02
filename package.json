@@ -23,9 +23,17 @@
     "react-scroll": "^1.8.7",
     "styled-components": "^5.3.5"
   },
+  
+    "extends": "next",
+    "rules": {
+      "react/no-unescaped-entities": "off",
+      "@next/next/no-page-custom-font": "off"
+    }
+  ,
   "devDependencies": {
     "eslint": "8.16.0",
     "eslint-config-next": "12.1.6",
     "tailwindcss": "^3.0.24"
   }
+  
 }

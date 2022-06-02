@@ -42,7 +42,7 @@
 */
 .para p {
   font-size: 1rem !important;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
 }
 /* .pading {
   margin-top: 9vw !important;

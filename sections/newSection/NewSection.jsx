@@ -4,11 +4,11 @@ import NewSection2 from "../../components/newSection/NewSection2";
 import NavBar from "../navbar/Navbar";
 import c from "./NewSection.module.css";
 
-const NewSection = () => {
+const NewSection = (props) => {
   return (
     <section className={c.newSection}>
       <NavBar />
-      <NewSection1 />
+      <NewSection1 setShow={props.setShow} />
       <NewSection2 />
     </section>
   );

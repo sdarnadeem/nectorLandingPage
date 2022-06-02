@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const NewSection2 = () => {
   return (
-    <div className={c.container}>
+    <div id="about" className={c.container}>
       <div className={c.left}>
         <motion.div
           className={c.image}
@@ -27,10 +27,14 @@ const NewSection2 = () => {
           // animate={{ x: 0 }}
           transition={{ duration: 0.5, type: "tween", delay: 0.3 }}
         >
-          It’s hard to form an accurate first impression of a potential date
-          just by looking at their photo. So much of our first impression of
-          people is in how they speak and how they engage in an interaction. Let
-          Nectar introduce you to real people through videos.
+          <h2 className="pb-3">
+            <strong>About Us</strong>
+          </h2>
+          Online profiles can be so vague, and there is just so much you can
+          tell through a photo of someone vacationing, with their mates at the
+          bar or playing with their 4-legged friend. On video, you can get a
+          better idea of the person’s total package. Through a video - you can
+          get a more accurate representation of the person behind the profile.
         </motion.p>
         <motion.p
           className={c.tip}

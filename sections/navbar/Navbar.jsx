@@ -21,7 +21,18 @@ function Navbar({
   const [anchorEl, setAnchorEl] = useState(null);
 
   const handleClose = () => {
-    setAnchorEl(null);
+    // setAnchorEl("#home");
+    <a href="#home" onClick={() => home("home")}>
+      Home
+    </a>;
+  };
+
+  const handleClosea = () => {
+    setAnchorEl("#about");
+  };
+
+  const handleClosef = () => {
+    setAnchorEl("#features");
   };
 
   const openMenu = (e) => {
@@ -30,7 +41,7 @@ function Navbar({
 
   useEffect(() => {
     AOS.init({
-      duration: 1200,
+      duration: 0,
     });
   }, []);
 
@@ -72,43 +83,41 @@ function Navbar({
           >
             <MenuItem onClick={handleClose}>Home</MenuItem>
             <Divider />
-            <MenuItem onClick={handleClose}>Features</MenuItem>
+            <MenuItem onClick={handleClosea}>About</MenuItem>
             <Divider />
-            <MenuItem onClick={handleClose}>About</MenuItem>
-            <Divider />
-            <MenuItem onClick={handleClose}>Contact</MenuItem>
+            <MenuItem onClick={handleClosef}>Features</MenuItem>
           </Menu>
 
-          <ul data-aos="fade-left" className={styles.navul}>
+          <ul
+            data-aos="fade-left"
+            style={{ marginBottom: "0" }}
+            className={styles.navul}
+          >
             <li>
-              <a href="#home" onClick={() => home("home")}>
-                Home
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a
+                href="#about "
+                // ref={featuresRef}
+                // id="features"
+                // onClick={() => features("about")}
+              >
+                About
               </a>
             </li>
             <li>
               <a
                 href="#features"
-                // ref={featuresRef}
-                // id="features"
-                onClick={() => features("features")}
+                // onClick={() => about(" features")}
               >
                 Features
-              </a>
-            </li>
-            <li>
-              <a href="#about" onClick={() => about("about")}>
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#contact" onClick={() => contact("contact")}>
-                Contact
               </a>
             </li>
           </ul>
         </nav>
 
-        {open && (
+        {/* {open && (
           <div className={styles.popupbg}>
             <div className={styles.popup}>
               <h4>Don’t just swipe on photos</h4>
@@ -127,7 +136,7 @@ function Navbar({
               <h4>Coming Soon...</h4>
             </div>
           </div>
-        )}
+        )} */}
       </motion.div>
     </>
   );

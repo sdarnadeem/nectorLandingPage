@@ -52,3 +52,31 @@
     transform: translateX(0);
   }
 }
+
+.ani_d_flex {
+  display: flex;
+}
+
+.beeAni {
+  position: relative;
+  width: 200px;
+  height: 120px;
+  z-index: 100;
+}
+
+.birdAni {
+  position: relative;
+  width: 120px;
+  height: 80px;
+  z-index: 100;
+}
+
+.heartAni {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  z-index: 98;
+}
+.textDiv {
+  text-align: center;
+}

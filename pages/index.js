@@ -1,5 +1,5 @@
 import LogoAnim from "../sections/logoAnim/LogoAnim";
-import NavBar from "../sections/navBar/NavBar";
+// import NavBar from "../sections/navBar/NavBar";
 import { useState, useEffect } from "react";
 import { Element, scroller } from "react-scroll";
 import About from "../sections/about/About";

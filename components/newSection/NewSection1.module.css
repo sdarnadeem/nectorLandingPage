@@ -5,7 +5,7 @@
 
   height: 120vh;
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   background-image: url("/images/bgsec1.png");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -103,7 +103,7 @@
 @media only screen and (max-width: 900px) {
   .container {
     grid-template-columns: 1fr;
-    grid-template-rows: 3fr 1fr;
+    grid-template-rows: 1fr;
     justify-items: start;
     padding: 0;
     /* background-position: center; */
@@ -113,7 +113,7 @@
 
     height: 40vh;
     display: grid;
-    grid-template-columns: 1.2fr 1fr;
+    grid-template-columns: 1fr;
     background-image: none;
     /* background-image: url("/images/bgsec1.png");
     background-repeat: no-repeat;
@@ -124,6 +124,7 @@
     grid-row: 2 / 3;
     transform: translateY(8rem);
     margin-top: -120px;
+    padding: 0 2rem;
   }
   .image {
     width: 300px;
@@ -131,10 +132,10 @@
   }
 
   .leftSide h2 span {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .leftSide h2 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .leftSide .bottomText button {

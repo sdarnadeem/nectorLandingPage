@@ -50,7 +50,7 @@ const LogoAnim = () => {
         />
       </motion.div>
       <motion.div className={c.textDiv} initial={{ x: 0, y: -80 }}>
-        <h2 className={c.heading}>Find Your First Date Now</h2>
+        <h2 className={c.heading}>Here is a story of the birds and bees…</h2>
       </motion.div>
     </motion.div>
   );

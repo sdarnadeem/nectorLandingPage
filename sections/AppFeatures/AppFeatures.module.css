@@ -22,8 +22,8 @@
   font-size: 1.4rem !important;
 }
 
-.para div div p {
-  margin-bottom: 3rem;
+.para {
+  padding-bottom: 3rem;
 }
 /* .para div {
   height: 5px;

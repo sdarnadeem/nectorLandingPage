@@ -5,10 +5,11 @@ import { Element, scroller } from "react-scroll";
 import About from "../sections/about/About";
 import AppFeatures from "../sections/AppFeatures/AppFeatures";
 import Modals from "./../sections/navbar/Modals";
-import { Button, Modal, Footer, Header } from "react-bootstrap";
+import { Button, Modal, Header } from "react-bootstrap";
 
 import Featured from "../sections/featured/Featured";
 import NewSection from "../sections/newSection/NewSection";
+import Footer from "../sections/footer/Footer";
 
 export default function Home() {
   const [show, setShow] = useState(false);
@@ -58,6 +59,7 @@ export default function Home() {
           <Element name="about">
             <AppFeatures />
           </Element>
+          <Footer />
           <div>
             <Modals setShow={setShow} show={show} />
           </div>

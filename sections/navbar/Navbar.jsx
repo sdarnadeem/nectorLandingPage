@@ -59,12 +59,7 @@ function Navbar({
 
           {/* <h6 className={styles.headerlogo}>Nectar</h6> */}
 
-          <img
-            onClick={openMenu}
-            className={styles.menu}
-            src="/images/dating/menu.png"
-            alt="menu"
-          />
+          <div className={styles.menu} onClick={openMenu} />
 
           <Menu
             id="lame-menu"

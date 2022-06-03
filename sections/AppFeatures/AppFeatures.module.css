@@ -21,6 +21,10 @@
   font-weight: 500;
   font-size: 1.4rem !important;
 }
+
+.para {
+  padding-bottom: 3rem;
+}
 /* .para div {
   height: 5px;
   width: 5px;
@@ -42,14 +46,14 @@
 */
 .para p {
   font-size: 1rem !important;
-  margin-bottom: 0;
+  margin-bottom: 3rem;
 }
 /* .pading {
   margin-top: 9vw !important;
 } */
 @media screen and (max-width: 768px) {
   .para {
-    padding: 3rem;
+    padding: 0 3rem !important;
   }
   .pading {
     margin-top: 0 !important;
@@ -63,7 +67,7 @@
     width: 25% !important;
   }
   .para {
-    padding: 3.5rem;
+    padding: 0 3.5rem !important;
   }
 }
 @media screen and (max-width: 480px) {

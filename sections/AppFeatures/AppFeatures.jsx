@@ -110,7 +110,7 @@ function AppFeatures() {
             >
               <div
                 className="row align-items-center"
-                style={{ minHeight: "48vh" }}
+                // style={{ minHeight: "48vh" }}
               >
                 <div className="col-12">
                   <h3>Live video</h3>
@@ -153,7 +153,7 @@ function AppFeatures() {
             >
               <div
                 className="row align-items-center"
-                style={{ minHeight: "48vh" }}
+                // style={{ minHeight: "48vh" }}
               >
                 <div className="col-12">
                   <h3>Security </h3>

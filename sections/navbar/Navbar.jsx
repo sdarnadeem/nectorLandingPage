@@ -19,9 +19,10 @@ function Navbar({
   setVisibleElement,
 }) {
   const [anchorEl, setAnchorEl] = useState(null);
+  const [showMenu, setShowMenu] = useState(false);
 
   const handleClose = () => {
-    // setAnchorEl("#home");
+    setAnchorEl("#home");
     <a href="#home" onClick={() => home("home")}>
       Home
     </a>;
@@ -37,6 +38,8 @@ function Navbar({
 
   const openMenu = (e) => {
     setAnchorEl(e.currentTarget);
+    setShowMenu((prev) => !prev);
+    console.log("open menu pressed");
   };
 
   useEffect(() => {
@@ -59,34 +62,31 @@ function Navbar({
 
           {/* <h6 className={styles.headerlogo}>Nectar</h6> */}
 
-          <img
-            onClick={openMenu}
-            className={styles.menu}
-            src="/images/dating/menu.png"
-            alt="menu"
-          />
+          <div className={styles.menu} onClick={openMenu} />
 
-          <Menu
-            id="lame-menu"
-            anchorEl={anchorEl}
-            keepMounted
-            open={Boolean(anchorEl)}
-            onClose={handleClose}
-            anchorOrigin={{
-              vertical: "bottom",
-              horizontal: "center",
-            }}
-            transformOrigin={{
-              vertical: "top",
-              horizontal: "right",
-            }}
-          >
-            <MenuItem onClick={handleClose}>Home</MenuItem>
-            <Divider />
-            <MenuItem onClick={handleClosea}>About</MenuItem>
-            <Divider />
-            <MenuItem onClick={handleClosef}>Features</MenuItem>
-          </Menu>
+          {showMenu && (
+            <Menu
+              id="lame-menu"
+              anchorEl={anchorEl}
+              keepMounted
+              open={Boolean(anchorEl)}
+              onClose={handleClose}
+              anchorOrigin={{
+                vertical: "bottom",
+                horizontal: "center",
+              }}
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "right",
+              }}
+            >
+              <MenuItem onClick={handleClose}>Home</MenuItem>
+              <Divider />
+              <MenuItem onClick={handleClosea}>About</MenuItem>
+              <Divider />
+              <MenuItem onClick={handleClosef}>Features</MenuItem>
+            </Menu>
+          )}
 
           <ul
             data-aos="fade-left"

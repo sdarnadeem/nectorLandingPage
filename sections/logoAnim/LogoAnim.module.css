@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 .container {
   /* display: grid;
   place-items: center; */
@@ -30,12 +31,14 @@
 }
 
 .heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   /* opacity: 0; */
   letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 2s steps(20, end);
+  animation: typing 2s steps(25, end);
   /* animation-delay: 2s; */
   margin-top: 20px;
 }

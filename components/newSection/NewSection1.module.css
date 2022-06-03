@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Merriweather:ital,wght@1,900&display=swap");
-
+@import url("https://db.onlinewebfonts.com/c/1fed4454352f201d52b65ca5480afb2d?family=Playlist");
 .container {
   max-width: 100%;
 
@@ -23,12 +23,12 @@
 }
 
 .leftSide h2 {
-  font-family: "Merriweather", serif;
+  font-family: "Playlist", serif;
 }
 
 .leftSide h2 span {
   display: block;
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 900;
   margin-bottom: 1rem;
 }

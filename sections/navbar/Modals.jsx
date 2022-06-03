@@ -26,7 +26,7 @@ const Modals = (props) => {
         centered
       >
         <div className={c.close}>
-          <div className={c.btn}></div>
+          <div onClick={handleClose} className={c.btn}></div>
         </div>
         <Modal.Body className="p-0 m-0">
           <div

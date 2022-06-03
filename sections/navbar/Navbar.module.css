@@ -65,7 +65,7 @@
   top: 0;
   align-items: center;
   justify-content: space-between;
-  padding: 5px 0 5px;
+  padding: 10px 0;
 }
 .menu {
   /* position: relative; */
@@ -101,9 +101,9 @@
 
 .logo {
   position: relative;
-  width: 150px;
+  width: 300px;
   cursor: pointer;
-  height: 50px;
+  height: 100px;
 }
 
 .header nav ul li a {

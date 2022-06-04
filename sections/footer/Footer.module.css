@@ -19,30 +19,33 @@
 
 @media only screen and (max-width: 864px) {
   .footer div:not(:last-child) {
-    padding-right: 4rem;
+    padding-right: 2rem;
   }
 }
 
-@media only screen and (max-width: 670px) {
-  .footer div:not(:last-child) {
-    padding-right: 4rem;
+@media only screen and (max-width: 750px) {
+  .footer div {
+    padding-bottom: 3rem;
+    padding-right: 0;
   }
-}
-
-.footer div {
-  margin-bottom: 3rem;
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
 }
 
 .left {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
-.left img {
-  width: 150px;
-  height: 75px;
+.img {
+  position: relative;
+  width: 300px;
+  height: 200px;
 }
 
 .middle {

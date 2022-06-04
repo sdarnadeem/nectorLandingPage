@@ -1,5 +1,6 @@
 import React from "react";
 import { BsFacebook } from "react-icons/bs";
+import Image from "next/image";
 import Link from "next/link";
 import {
   AiFillTwitterCircle,
@@ -13,8 +14,13 @@ const Footer = () => {
   return (
     <section className={c.footer}>
       <div className={c.left}>
-        <img alt="footer images" src="/images/datingNew/logoNew.png" />
-        <img alt="footer images" src="/images/datingNew/logotext.png" />
+        <div className={c.img}>
+          <Image
+            layout="fill"
+            alt="footer images"
+            src="/images/dating/logo.svg"
+          />
+        </div>
       </div>
       <div className={c.middle}>
         <h3>Useful Links</h3>

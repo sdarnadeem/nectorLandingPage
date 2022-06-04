@@ -46,7 +46,7 @@
 
 @media only screen and (max-width: 1150px) {
   .container {
-    margin-top: -10rem;
+    margin-top: -20rem;
   }
   .right .tip {
     transform: rotate(10deg);
@@ -70,7 +70,7 @@
     grid-template-columns: 1fr;
     padding: 0;
     margin-top: 0;
-    /* padding-top: 8rem; */
+    padding-bottom: 4rem;
   }
   .right {
     order: 1;

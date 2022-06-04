@@ -83,8 +83,8 @@ function AppFeatures() {
                     height: "40%",
                   }}
                 />
-              </div>
-              {/* <div className={`w-30 h-30  ${styles.lottie2} ${styles.lottie}`}>
+                </div> */}
+              <div className={`w-30 h-30  ${styles.lottie2} ${styles.lottie}`}>
                 <Lottie
                   options={defaultOptions[1]}
                   style={{
@@ -94,7 +94,7 @@ function AppFeatures() {
                     height: "100%",
                   }}
                 />
-              </div> */}
+              </div>
             </div>
             <div
               className={`col-12 col-sm-8 align-items-center ${styles.para}`}

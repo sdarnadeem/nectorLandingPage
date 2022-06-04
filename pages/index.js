@@ -1,13 +1,9 @@
 import LogoAnim from "../sections/logoAnim/LogoAnim";
-// import NavBar from "../sections/navBar/NavBar";
 import { useState, useEffect } from "react";
 import { Element, scroller } from "react-scroll";
-import About from "../sections/about/About";
 import AppFeatures from "../sections/AppFeatures/AppFeatures";
 import Modals from "./../sections/navbar/Modals";
-import { Button, Modal, Header } from "react-bootstrap";
 
-import Featured from "../sections/featured/Featured";
 import NewSection from "../sections/newSection/NewSection";
 import Footer from "../sections/footer/Footer";
 

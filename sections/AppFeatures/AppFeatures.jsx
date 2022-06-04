@@ -46,11 +46,6 @@ function AppFeatures() {
       <div className="col-md-10 offset-md-1 ">
         <div className="row mb-3 ">
           <div className="col-12  col-sm-4 align-self-center  d-flex align-items-center justify-content-center">
-            {/* <img
-              src="/images/datingNew/harth.png"
-              className={styles.image}
-              alt=""
-            /> */}
             <div className={`w-30 h-30 ${styles.lottie}`}>
               <Lottie
                 options={defaultOptions[0]}
@@ -80,10 +75,6 @@ function AppFeatures() {
           <div className="row ">
             <div className="col-12  col-sm-4 d-flex align-items-center justify-content-center">
               {/* <img
-              src="/images/datingNew/privacy.png"
-              className={styles.image}
-              alt=""
-            /> */}
               <div className={`w-30 h-30 ${styles.lottie}`}>
                 <Lottie
                   options={defaultOptions[3]}

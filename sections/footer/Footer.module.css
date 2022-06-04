@@ -13,6 +13,22 @@
   font-family: "Roboto", sans-serif;
 }
 
+.footer div:not(:last-child) {
+  padding-right: 10rem;
+}
+
+@media only screen and (max-width: 864px) {
+  .footer div:not(:last-child) {
+    padding-right: 4rem;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .footer div:not(:last-child) {
+    padding-right: 4rem;
+  }
+}
+
 .footer div {
   margin-bottom: 3rem;
 }
@@ -22,7 +38,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-right: 10rem;
 }
 
 .left img {
@@ -34,7 +49,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-right: 10rem;
+
   flex-direction: column;
 }
 

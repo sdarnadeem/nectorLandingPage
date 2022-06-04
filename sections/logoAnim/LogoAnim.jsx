@@ -16,12 +16,16 @@ const LogoAnim = () => {
           // transitionEnd={{ y: "-1000" }}
           className={c.beeAni}
         >
-          <motion.img
-            layout="fill"
+          <motion.div
             className={`align-items-center ${c.beeAni}`}
-            src="/images/locomotive/BeePngAnimation.gif"
             alt="Bee Img"
-          />
+          >
+            <Image
+              layout="fill"
+              src="/images/locomotive/BeePngAnimation.gif"
+              alt="Bee Png"
+            />
+          </motion.div>
         </motion.div>
         <motion.div
           initial={{ x: "-130vw", y: "-130vh" }}
@@ -31,23 +35,29 @@ const LogoAnim = () => {
           // transitionEnd={{ y: "-1000" }}
           className={c.birdAni}
         >
-          <motion.img
-            layout="fill"
+          <motion.div
             className={`aline-items-center ${c.birdAni}`}
-            src="/images/locomotive/BirdPngAnimaction.gif"
             alt="Bird Img"
-          />
+          >
+            <Image
+              layout="fill"
+              src="/images/locomotive/BirdPngAnimaction.gif"
+              alt=""
+            />
+          </motion.div>
         </motion.div>
       </motion.div>
       <motion.div
         initial={{ x: "0vw", y: "0vh" }}
         transition={{ delay: 3000, duration: 2 }}
       >
-        <motion.img
-          className={`ani_d_flex ${c.heartAni}`}
-          src="/images/locomotive/beating-heart.gif"
-          alt="Heart Img"
-        />
+        <motion.div className={`ani_d_flex ${c.heartAni}`}>
+          <Image
+            layout="fill"
+            src="/images/locomotive/beating-heart.gif"
+            alt="Heart Img"
+          />
+        </motion.div>
       </motion.div>
       <motion.div className={c.textDiv} initial={{ x: 0, y: -80 }}>
         <h2 className={c.heading}>Here is a story of the birds and bees…</h2>

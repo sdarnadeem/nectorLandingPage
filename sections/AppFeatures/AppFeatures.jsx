@@ -44,7 +44,7 @@ function AppFeatures() {
   return (
     <div id="features" className={`pt-5 row ${styles.pading}`}>
       <div className="col-md-10 offset-md-1 ">
-        <div className="row ">
+        <div className="row mb-3 ">
           <div className="col-12  col-sm-4 align-self-center  d-flex align-items-center justify-content-center">
             {/* <img
               src="/images/datingNew/harth.png"
@@ -61,7 +61,7 @@ function AppFeatures() {
               />
             </div>
           </div>
-          <div className={`col-12 col-sm-8 align-self-center  ${styles.para}`}>
+          <div className={`col-12 col-sm-8 align-self-center   ${styles.para}`}>
             <h3>Video Bio</h3>
             <div></div>
             <p style={{ textAlign: "justify" }}>
@@ -75,7 +75,7 @@ function AppFeatures() {
           </div>
         </div>
       </div>
-      <div className="row">
+      <div className="row  mb-3">
         <div className="col-md-10 offset-md-1 ">
           <div className="row ">
             <div className="col-12  col-sm-4 d-flex align-items-center justify-content-center">
@@ -129,7 +129,7 @@ function AppFeatures() {
         </div>
       </div>
 
-      <div className="row">
+      <div className="row  mb-3">
         <div className="col-md-10 offset-md-1 ">
           <div className="row">
             <div className="col-12 align-items-center  col-sm-4 d-flex align-items-center justify-content-center">

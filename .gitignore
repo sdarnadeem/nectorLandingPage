@@ -13,6 +13,8 @@ next.js
 /out/
 ./out
 out
+
+bfg.jar
 # production
 /build
 

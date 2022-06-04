@@ -83,3 +83,13 @@
 .textDiv {
   text-align: center;
 }
+
+@media only screen and (max-width: 500px) {
+  .heading {
+    /* overflow: visible; */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    white-space: normal !important;
+  }
+}

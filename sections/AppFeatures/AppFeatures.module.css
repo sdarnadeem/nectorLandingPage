@@ -85,4 +85,5 @@
   );
   padding: 6rem 0 !important;
   padding-top: 5rem !important;
+  max-width: 100% !important;
 }

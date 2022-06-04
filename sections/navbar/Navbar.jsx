@@ -9,37 +9,33 @@ import { motion } from "framer-motion";
 
 import styles from "./Navbar.module.css";
 
-function Navbar({
-  features,
-  contact,
-  home,
-  about,
-  open,
-  closePopup,
-  setVisibleElement,
-}) {
+function Navbar({ home }) {
   const [anchorEl, setAnchorEl] = useState(null);
   const [showMenu, setShowMenu] = useState(false);
 
   const handleClose = () => {
-    setAnchorEl("#home");
-    <a href="#home" onClick={() => home("home")}>
-      Home
-    </a>;
+    setAnchorEl(null);
+    // <a href="#home" onClick={() => home("home")}>
+    //   Home
+    // </a>;
   };
 
-  const handleClosea = () => {
-    setAnchorEl("#about");
-  };
+  // const handleClosea = () => {
+  //   setAnchorEl("#about");
+  // };
 
-  const handleClosef = () => {
-    setAnchorEl("#features");
+  // const handleClosef = () => {
+  //   setAnchorEl("#features");
+  // };
+
+  const linkStyles = {
+    textDecoration: "none",
+    color: "black",
   };
 
   const openMenu = (e) => {
     setAnchorEl(e.currentTarget);
     setShowMenu((prev) => !prev);
-    console.log("open menu pressed");
   };
 
   useEffect(() => {
@@ -62,8 +58,9 @@ function Navbar({
 
           {/* <h6 className={styles.headerlogo}>Nectar</h6> */}
 
-          <div className={styles.menu} onClick={openMenu} />
-
+          <div className={styles.menuContainer} onClick={openMenu}>
+            <div className={styles.menu} />
+          </div>
           {showMenu && (
             <Menu
               id="lame-menu"
@@ -80,11 +77,23 @@ function Navbar({
                 horizontal: "right",
               }}
             >
-              <MenuItem onClick={handleClose}>Home</MenuItem>
+              <MenuItem onClick={handleClose}>
+                <a style={linkStyles} href="#">
+                  Home
+                </a>
+              </MenuItem>
               <Divider />
-              <MenuItem onClick={handleClosea}>About</MenuItem>
+              <MenuItem>
+                <a style={linkStyles} href="#about">
+                  About
+                </a>
+              </MenuItem>
               <Divider />
-              <MenuItem onClick={handleClosef}>Features</MenuItem>
+              <MenuItem>
+                <a style={linkStyles} href="#features">
+                  Features
+                </a>
+              </MenuItem>
             </Menu>
           )}
 
@@ -98,7 +107,7 @@ function Navbar({
             </li>
             <li>
               <a
-                href="#about "
+                href="#about"
                 // ref={featuresRef}
                 // id="features"
                 // onClick={() => features("about")}

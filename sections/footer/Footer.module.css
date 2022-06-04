@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
 
 .footer {
+  max-width: 100%;
   padding: 3rem;
   padding-top: 6rem;
   background-color: black;

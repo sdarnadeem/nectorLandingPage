@@ -11,7 +11,7 @@ export default function Home() {
   const [show, setShow] = useState(false);
   const handleShow = () => setShow(true);
 
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);

@@ -5,6 +5,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 5rem 0;
+  margin-top: -15rem;
 }
 
 .left {
@@ -44,6 +45,9 @@
 }
 
 @media only screen and (max-width: 1150px) {
+  .container {
+    margin-top: -10rem;
+  }
   .right .tip {
     transform: rotate(10deg);
   }
@@ -65,7 +69,8 @@
   .container {
     grid-template-columns: 1fr;
     padding: 0;
-    padding-top: 8rem;
+    margin-top: 0;
+    /* padding-top: 8rem; */
   }
   .right {
     order: 1;
@@ -74,10 +79,5 @@
 
   .left {
     order: 2;
-  }
-}
-@media only screen and (max-width: 900px) {
-  .container {
-    padding-top: 20rem;
   }
 }

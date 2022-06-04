@@ -2,7 +2,6 @@
 @import url("https://db.onlinewebfonts.com/c/1fed4454352f201d52b65ca5480afb2d?family=Playlist");
 .container {
   max-width: 100%;
-
   height: 120vh;
   display: grid;
   grid-template-columns: 1.5fr 1fr;
@@ -18,8 +17,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
-  padding-top: 5rem;
+  justify-content: flex-start;
+  padding-top: 15rem;
 }
 
 .leftSide h2 {
@@ -111,20 +110,26 @@
   .container {
     max-width: 100%;
 
-    height: 40vh;
+    height: 60vh;
     display: grid;
     grid-template-columns: 1fr;
     background-image: none;
     /* background-image: url("/images/bgsec1.png");
     background-repeat: no-repeat;
     background-size: 100%; */
+    background: rgb(179, 255, 217);
+    background: linear-gradient(
+      117deg,
+      rgba(179, 255, 217, 1) 0%,
+      rgba(128, 255, 225, 1) 100%
+    );
   }
 
   .leftSide {
-    grid-row: 2 / 3;
-    transform: translateY(8rem);
-    margin-top: -120px;
-    padding: 0 2rem;
+    /* grid-row: 2 / 3; */
+    /* transform: translateY(8rem); */
+    /* margin-top: -120px; */
+    padding: 10rem 2rem 0;
   }
   .image {
     width: 300px;
@@ -153,19 +158,19 @@
   .container {
     max-width: 100%;
 
-    height: 40vh;
+    height: 60vh;
     display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    background-image: none;
+    grid-template-columns: 1fr;
+    /* background-image: none; */
     /* background-image: url("/images/bgsec1.png");
     background-repeat: no-repeat;
     background-size: 100%; */
   }
 
   .leftSide {
-    grid-row: 2 / 3;
-    transform: translateY(18rem);
-    margin-top: -500px;
+    grid-row: 1 / 2;
+    /* transform: translateY(18rem); */
+    /* margin-top: -500px; */
   }
 
   .image {

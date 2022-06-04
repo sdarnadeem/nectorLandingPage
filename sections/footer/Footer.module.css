@@ -16,7 +16,7 @@
   padding-right: 10rem;
 }
 
-@media only screen and (max-width: 864px) {
+@media only screen and (max-width: 1000px) {
   .footer div:not(:last-child) {
     padding-right: 2rem;
   }

@@ -83,5 +83,6 @@
     rgba(179, 255, 217, 1) 0%,
     rgba(128, 255, 225, 1) 100%
   );
-  padding: 0 4rem;
+  padding: 6rem 0 !important;
+  padding-top: 5rem !important;
 }

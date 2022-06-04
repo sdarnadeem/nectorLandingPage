@@ -42,7 +42,11 @@ function AppFeatures() {
     },
   ];
   return (
-    <div id="features" className={`pt-5 row ${styles.pading}`}>
+    <div
+      id="features"
+      className={`pt-5 row ${styles.pading}`}
+      style={{ paddingTop: "6rem !important" }}
+    >
       <div className="col-md-10 offset-md-1 ">
         <div className="row mb-3 ">
           <div className="col-12  col-sm-4 align-self-center  d-flex align-items-center justify-content-center">

@@ -28,10 +28,23 @@
     padding-bottom: 3rem;
     padding-right: 0;
   }
+
+  .footer div:not(:last-child) {
+    padding-right: 0;
+  }
   .footer {
     flex-direction: column;
     align-items: center;
     padding: 0;
+  }
+  .left {
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .middle {
+    align-items: center;
+
+    flex-direction: column;
   }
 }
 
